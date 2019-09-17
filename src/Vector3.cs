@@ -47,5 +47,15 @@ namespace VectorMath
             this.Y = y;
             this.Z = z;
         }
+
+        /// <summary>
+        /// Computes the dot product of this vector and another vector.
+        /// </summary>
+        /// <param name="other">The other vector to compute the dot product of.</param>
+        /// <returns>The dot product of the two vectors as a double.</returns>
+        public double DotProduct(Vector3 other)
+        {
+            return (X * other.X) + (Y * other.Y) + (Z * other.Z);
+        }
     }
 }
